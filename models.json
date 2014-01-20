@@ -1,14 +1,12 @@
 {
   "email": {
-    "dataSource": "mail",
-    "public": false,
     "options": {
       "base": "Email"
-    }
+    },
+    "dataSource": "mail",
+    "public": false
   },
   "user": {
-    "dataSource": "db",
-    "public": true,
     "options": {
       "base": "User",
       "relations": {
@@ -18,13 +16,43 @@
           "foreignKey": "userId"
         }
       }
-    }
+    },
+    "dataSource": "db",
+    "public": true
   },
   "accessToken": {
-    "dataSource": "db",
-    "public": true,
     "options": {
       "base": "AccessToken"
-    }
+    },
+    "dataSource": "db",
+    "public": true
+  },
+  "objA": {
+    "properties": {
+      "aField": {
+        "type": "string"
+      }
+    },
+    "options": {
+      "relations": {
+        "objB": {
+          "model": "objB",
+          "type": "hasMany"
+        }
+      }
+    },
+    "public": true,
+    "dataSource": "db",
+    "plural": "objAs"
+  },
+  "objB": {
+    "properties": {
+      "bField": {
+        "type": "string"
+      }
+    },
+    "public": true,
+    "dataSource": "db",
+    "plural": "objBs"
   }
 }
