@@ -1,0 +1,6 @@
+*.DS_*
+*~
+*.sw?
+node_modules
+*.log
+public/uploads
