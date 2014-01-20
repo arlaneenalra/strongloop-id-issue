@@ -1,0 +1,58 @@
+{
+  "email": {
+    "options": {
+      "base": "Email"
+    },
+    "dataSource": "mail",
+    "public": false
+  },
+  "user": {
+    "options": {
+      "base": "User",
+      "relations": {
+        "accessTokens": {
+          "model": "accessToken",
+          "type": "hasMany",
+          "foreignKey": "userId"
+        }
+      }
+    },
+    "dataSource": "db",
+    "public": true
+  },
+  "accessToken": {
+    "options": {
+      "base": "AccessToken"
+    },
+    "dataSource": "db",
+    "public": true
+  },
+  "objA": {
+    "properties": {
+      "aField": {
+        "type": "string"
+      }
+    },
+    "options": {
+      "relations": {
+        "objBs": {
+          "model": "objB",
+          "type": "hasMany"
+        }
+      }
+    },
+    "public": true,
+    "dataSource": "db",
+    "plural": "objAs"
+  },
+  "objB": {
+    "properties": {
+      "aField": {
+        "type": "string"
+      }
+    },
+    "public": true,
+    "dataSource": "db",
+    "plural": "objBs"
+  }
+}

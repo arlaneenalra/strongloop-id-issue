@@ -1,0 +1,12 @@
+{
+  "db": {
+    "defaultForType": "db",
+    "connector": "mongodb",
+    "database":"strongloop-id-issue",
+    "debug":true
+  },
+  "mail": {
+    "defaultForType": "mail",
+    "connector": "mail"
+  }
+}
