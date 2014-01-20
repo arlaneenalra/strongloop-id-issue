@@ -35,7 +35,7 @@
     },
     "options": {
       "relations": {
-        "objB": {
+        "objBs": {
           "model": "objB",
           "type": "hasMany"
         }
@@ -47,7 +47,7 @@
   },
   "objB": {
     "properties": {
-      "bField": {
+      "aField": {
         "type": "string"
       }
     },

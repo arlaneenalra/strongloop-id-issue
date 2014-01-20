@@ -1,7 +1,9 @@
 {
   "db": {
     "defaultForType": "db",
-    "connector": "memory"
+    "connector": "mongodb",
+    "database":"strongloop-id-issue",
+    "debug":true
   },
   "mail": {
     "defaultForType": "mail",

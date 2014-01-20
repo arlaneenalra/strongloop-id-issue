@@ -2,10 +2,14 @@
   "version": "0.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node test.js"
   },
   "dependencies": {
-    "loopback": "1.4.x"
+    "loopback": "1.4.x",
+    "loopback-connector-mongodb": "~1.1.4",
+    "request": "~2.33.0",
+    "q": "~1.0.0"
   },
   "optionalDependencies": {
     "strong-cluster-control": "~0.1.0",
