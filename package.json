@@ -6,8 +6,8 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "loopback": "1.4.x",
-    "loopback-connector-mongodb": "~1.1.4",
+    "loopback": "~1.6.2",
+    "loopback-connector-mongodb": "~1.1.5",
     "request": "~2.33.0",
     "q": "~1.0.0"
   },
